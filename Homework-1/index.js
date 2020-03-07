@@ -44,15 +44,15 @@ console.log(typeof fe_group);
 const message = "Жопа!"
 console.log(message);
 
-let men = "Ben"
+let men = "ben"
 console.log(men);
 console.log(`${men}, ${message}`);
 
 
-// alert(`${men}, ${message}`);
+alert(`${men}, ${message}`);
 
-// const isReady = confirm("Are you ready?");
-// console.log(isReady);
+ const isReady = confirm("Are you ready?");
+console.log(isReady);
 
 const enterName = prompt("Enter your name")
 console.log(enterName);
