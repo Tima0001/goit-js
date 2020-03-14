@@ -1,6 +1,6 @@
 "use strict";
 
-let greeting = "приветствую";
+let greeting = "Приветствую";
 
 let userName = prompt("Как вас зовут?");
 alert(userName + ", " + greeting);
