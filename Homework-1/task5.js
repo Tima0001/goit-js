@@ -1,4 +1,14 @@
 // "use strict";
 
-// console.log(Math.max(2, 34, 99, 3, 22, 36, 733, 18)); // 733
-// console.log(Math.min(2, 34, 99, 3, 22, 36, 733, 18)); // 2
+// const ADMIN_PASSWORD = "jqueryismyjam";
+// let message = prompt("введите пароль");
+// // console.log(message);
+
+// if (message == null) {
+//   console.log("Отменено пользователем!");
+// } else if (message === ADMIN_PASSWORD) {
+//   console.log("Добро пожаловать!");
+// } else {
+//   console.log("Доступ запрещен, неверный пароль!");
+// }
+// alert(message);

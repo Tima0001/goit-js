@@ -76,3 +76,9 @@ const var3 = true;
 // console.log(Number.parseFloat(tetra)); // 12.34
 
 /////5/////
+
+// console.log(Math.max(2, 34, 99, 3, 22, 36, 733, 18)); // 733
+// console.log(Math.min(2, 34, 99, 3, 22, 36, 733, 18)); // 2
+
+/////6/////
+
