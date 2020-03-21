@@ -1,8 +1,8 @@
-"use strict";
+// "use strict";
 
-const var1 = 1;
-const var2 = 0;
-const var3 = true;
+// const var1 = 1;
+// const var2 = 0;
+// const var3 = true;
 
 // const result = var1 > var2
 // console.log(result); //true
@@ -82,3 +82,5 @@ const var3 = true;
 
 /////6/////
 
+// let random = (Math.random() * (19 - 3) + 3).toFixed(2);
+// console.log(random);
