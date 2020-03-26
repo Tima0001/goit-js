@@ -39,23 +39,23 @@
 
 // val = "River"
 // console.log(Number.isNaN(val))
-// console.log(typeof (val), "( River )")
+// console.log(typeof (val))
 
 // val = "Mountain"
 // console.log(Number.isNaN(val))
-// console.log(typeof (val), "( Mountain )")
+// console.log(typeof (val))
 
 // val = 232
 // console.log(Number.isNaN(val))
-// console.log(typeof (val), "( 232 )")
+// console.log(typeof (val))
 
 // val = true
 // console.log(Number.isNaN(val))
-// console.log(typeof (val), "( true )")
+// console.log(typeof (val))
 
 // val = null
 // console.log(Number.isNaN(val))
-// console.log(typeof (val), "( null )")
+// console.log(typeof (val))
 
 /////3/////
 
@@ -63,7 +63,7 @@
 
 // const x =0.2;
 // const y =0.4;
-// console.log(x + y);
+// let result = (alfa * 10 + beta * 10) / 10;
 
 /////4/////
 
