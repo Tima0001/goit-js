@@ -1,57 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./index7.css" />
     <title>js_module7</title>
-    <link href="index7.css" rel="stylesheet">
 </head>
+
 <body>
     <header class="container">
-        <ul class="menu">
-            <li class="menu-item">home</li>
-            <li class="menu-item">about</li>
-            <li class="menu-item">gallery</li>
-            <li class="menu-item">blog</li>
-        </ul>
-        <button class="btn js-btn" data-action="action">click</button>
-    </header>
-    <main class="container">
-        
-        <div class="profile-container">
-            <!-- ЗДЕСЬ будут создаваться профили юзеров -->
+
+        <div id="parent">
+      PARENT
+      <div id="child">
+        CHILD
+        <div id="inner-child">INNER-CHILD</div>
+      </div>
+    </div>
+
+        <!-- <ul class="navigation js-nav">
+      <li><a href="#" class="navigation-btn">РЕНАТА</a></li>
+      <li><a href="#" class="navigation-btn">ТИМА</a></li>
+      <li><a href="#" class="navigation-btn">КОТ</a></li>
+      <li><a href="#" class="navigation-btn">ДАНЯ КИРЯЗОВ</a></li>
+      <li><a href="#" class="navigation-btn">ДАНЯ НИЖНИЧЕНКО</a></li>
+      <li><a href="#" class="navigation-btn">ВОВЧИК</a></li>
+      <li><a href="#" class="navigation-btn">FELIX</a></li>
+      <li><a href="#" class="navigation-btn">ВАНЯ</a></li>
+      <li><a href="#" class="navigation-btn">ДИМА</a></li>
+      <br>
+      <li><a href="#" class="navigation-btn">ЕВА</a></li>
+      <li><a href="#" class="navigation-btn">ПОЛИНА</a></li>
+      <li><a href="#" class="navigation-btn">ВИКА</a></li>
+      <li><a href="#" class="navigation-btn">АНДРЕЙ</a></li>
+      <li><a href="#" class="navigation-btn">КИРИЛ</a></li>
+      <li><a href="#" class="navigation-btn">ДИМА</a></li>
+      <li><a href="#" class="navigation-btn">ИЛЬЯ</a></li>
+      <li><a href="#" class="navigation-btn">ДАНЯ</a></li>
+      <li><a href="#" class="navigation-btn">ЯРИК</a></li>
+      <li><a href="#" class="navigation-btn">ДЕНИС</a></li>
+    </ul> -->
+
+        <div>
+            <button id="single" class="btn">SINGLE CALLBACK</button>
+            <hr>
+            <button id="multiple" class="btn">MULTIPLE CALLBACKS</button>
         </div>
 
+        <!-- <div class="addAndRemoveEventListener">
+      <button class="btn" data-action="add">Добавить слушателя</button>
+      <button class="btn" data-action="remove">Удалить слушателя</button>
+      <button id="newBtn" class="btn">CLICK ME!</button>
+    </div> -->
+
+        <form class="form">
+            <input type="text" placeholder="Login">
+            <input type="password" placeholder="Password">
+            <button type="submit" class="btn">Зарегистрироваться</button>
+        </form>
+
+        <div class="container">
+      <button type="button" data-action="clear" class="btn">Clear Input</button>
+      <div class="log-list"></div>
+    </div>
+
+        <ul class="menu">
+            <li class="menu-item"><a href="#">home</a></li>
+            <li class="menu-item"><a href="#">about</a></li>
+            <li class="menu-item"><a href="#">gallery</a></li>
+            <li class="menu-item"><a href="#">blog</a></li>
+        </ul>
+
+        <div class="center">
+            <nav class="nav">
+                <a href="#" class="btn-link">item 1</a>
+                <a href="#" class="btn-link">item 2</a>
+                <a href="#" class="btn-link">item 3</a>
+            </nav>
+        </div>
+
+        <button class="btn js-btn" data-action="action" data-random="1">
+            click
+        </button>
+
+    </header>
+    <main class="container">
         <ul class="main-list">
             <li class="main-item">
-                <img class="js-img" src="https://images.pexels.com/photos/825904/pexels-photo-825904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" width="270" height="300">
-                <p class="p text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla inventore velit odit
-                    illo
-                    tempore
-                    voluptatibus at
-                    corporis dicta quo fugit animi expedita, ex doloribus! Eligendi aliquid odio a vitae repellat?</p>
-
+                <img class="js-img" src="./img/10.jpeg" alt="" width="270" height="300" />
+                <p class="p text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+                    inventore velit odit illo tempore voluptatibus at corporis dicta quo
+                    fugit animi expedita, ex doloribus! Eligendi aliquid odio a vitae
+                    repellat?
+                </p>
             </li>
             <li class="main-item">
-                <img class="main-img" src="https://images.pexels.com/photos/76769/pexels-photo-76769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" width="270" height="300">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere doloribus, odio tenetur
-                    voluptates
-                    consectetur quibusdam magni tempora harum nam, aliquid aliquam adipisci. Numquam accusamus quisquam
-                    explicabo
-                    illum! Alias, nihil.</p>
+                <img class="main-img" src="./img/9.jpeg" alt="" width="270" height="300" />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere
+                    doloribus, odio tenetur voluptates consectetur quibusdam magni
+                    tempora harum nam, aliquid aliquam adipisci. Numquam accusamus
+                    quisquam explicabo illum! Alias, nihil.
+                </p>
             </li>
             <li class="main-item">
-                <img class="js-img" src="https://images.pexels.com/photos/2896135/pexels-photo-2896135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" width="270" height="300">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere doloribus, odio tenetur
-                    voluptates
-                    consectetur quibusdam magni tempora harum nam, aliquid aliquam adipisci. Numquam accusamus quisquam
-                    explicabo
-                    illum! Alias, nihil.</p>
+                <img class="js-img" src="./img/8.jpeg" alt="" width="270" height="300" />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere
+                    doloribus, odio tenetur voluptates consectetur quibusdam magni
+                    tempora harum nam, aliquid aliquam adipisci. Numquam accusamus
+                    quisquam explicabo illum! Alias, nihil.
+                </p>
             </li>
         </ul>
+
+        <div class="profile-container">
+            <!-- ЗДЕСЬ БУДУТ СОЗДАВАТЬСЯ ПРОФИЛИ ЮЗЕРОВ по примеру ниже -->
+
+            <!-- <div class="user-profile">
+                  <img class="avatar" src="./img/1.jpeg" alt="">
+                  <ul class="intro">
+                      <li><b>Name:</b>Omar Halem</li>
+                      <li><b>Phone:</b>999-888-77-66</li>
+                      <li><b>Email:</b>omar.halem@gmail.com</li>
+                      <li><b>Location:</b>Egypt, Aleksandria</li>
+                  </ul>
+              </div> -->
+        </div>
+
+        <!-- <table class="transaction-table">
+        <thead>
+          <tr>
+            <th>type</th>
+            <th>amount</th>
+            <th>date</th>
+            <th>business</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table> -->
+
     </main>
-<!-- 
-    <script type="module" src="index7.js"></script> -->
-    <script type="module" src="userProfile.js"></script>
+    <script type="module" src="./index7.js"></script>
+    <script type="module" src="./events.js"></script>
+    <!-- <script type="module" src="./userProfile.js"></script> -->
+    <!-- <script type="module" src="./transaction-history.js"></script> -->
+    <!-- <script type="module" src="./transaction.js"></script> -->
 </body>
+
 </html>
