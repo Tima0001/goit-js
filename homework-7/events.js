@@ -143,13 +143,68 @@ function innerChildClickHandler() {
 
 //обьект события
 
-const objectClick = (event) => {
+// const objectClick = (event) => {
+//     console.log(event);
+//     console.log(event.type);
+//     console.log(this);
+//     console.log(event.target);
+//     console.log(event.currentTarget);
+// };
+
+parent.addEventListener("click", objectClick);
+
+function objectClick(event) {
     console.log(event);
     console.log(event.type);
     console.log(this);
     console.log(event.target);
-    console.log(event.curentTarget);
+    console.log(event.currentTarget);
 };
 
-parent.addEventListener("click", objectClick);
+//прекращение всплытия
+// метод stopPropogation
+
+const innerChildStop = (event) => {
+    event.stopPropagation();
+    alert("innerChildClick");
+};
+
+parent.addEventListener("click", parentClickHandler);
+child.addEventListener("click", childClickHandler);
+innerChild.addEventListener("click", innerChildStop);
+
+const innerChildStopImmediate = (event) => {
+    event.stopImmediatePropagation();
+    // alert("immediateStopClick");
+};
+
+// innerChild.addEventListener("click", innerChildStopImmediate);
+
+// //stopPropagation тормозит всплытие но произойдет на текущем элементе
+// //stopImmediate даже на текущем элемнте не произойдет, все заблокируется
+
+//Дилегирование
+
+const teamList = document.querySelector(".js-nav");
+teamList.addEventListener("click", memberClick);
+
+function memberClick(event) {
+    event.preventDefault();
+
+    const target = event.target;
+    console.log(event.target);
+
+    //проверка узла где прозоишел клик
+    if (target.nodeName !== "A") return;
+    setActiveMember(target);
+};
+
+function setActiveMember(nextActiveMember) {
+    const currentActiveMember = teamList.querySelector("a.active");
+    if (currentActiveMember) {
+        currentActiveMember.classList.remove("active");
+    };
+    nextActiveMember.classList.add("active");
+};
+
 
