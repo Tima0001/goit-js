@@ -23,18 +23,18 @@ if (null || (-1 && 1)) alert("third"); // Выполнится
 
 let age = prompt("What is your age ?");
 
-if(age >= 14 && age <= 90){
-    alert("Правильно! (;")
+if (age >= 14 && age <= 90) {
+    alert("Правильно!")
 }
 
 // 2.1
 
-if (! age <= 14 || age <= 90){
-    alert("Не правильно! );")
+if (!age <= 14 || age <= 90) {
+    alert("Не правильно!")
 }
 
 // 2.2
 
-if(age <= 90 && age >= 14){
-    alert(" Не правильно! );")
+if (age <= 90 && age >= 14) {
+    alert("Не подходит!")
 }
